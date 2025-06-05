@@ -3,66 +3,266 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Generate QR asper your BRAND</title>
+    <title>QR | IMELIFE</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="basantbalayarqr.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
-        input[type="file"]::file-selector-button {
-            margin-right: 0.5rem; border: none; background: #3b82f6; /* bg-blue-500 */
-            padding: 0.5rem 0.75rem; border-radius: 0.375rem; /* rounded-md */
-            color: white; cursor: pointer; transition: background-color 0.2s ease-in-out;
+        body {
+            background-image: url('Icon-1.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            background-color: rgba(255, 255, 255, 0.774);
+            font-family: 'Poppins', 'Noto Sans Devanagari', sans-serif;
         }
-        input[type="file"]::file-selector-button:hover { background: #2563eb; /* bg-blue-600 */ }
+        
+        .bg-white {
+            background-color: rgba(255, 255, 255, 0.767) !important;
+            backdrop-filter: blur(5px);
+        }
+        input[type="file"]::file-selector-button {
+            margin-right: 0.5rem; border: none; background: #05077e; /* bg-blue-500 */
+            padding: 0.5rem 0.75rem; border-radius: 0.375rem; /* rounded-md */
+            color: rgba(255, 255, 255, 0.726); cursor: pointer; transition: background-color 0.2s ease-in-out;
+        }
+        input[type="file"]::file-selector-button:hover { background: #000000; /* bg-blue-600 */ }
         ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #f1f1f1; border-radius: 10px; }
-        ::-webkit-scrollbar-thumb { background: #cbd5e1; /* slate-300 */ border-radius: 10px; }
-        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; /* slate-500 */ }
+        ::-webkit-scrollbar-track { background: #f1f1f1bd; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb { background: #05038f; /* slate-300 */ border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #05038f; /* slate-500 */ }
         .color-picker-wrapper { position: relative; width: 40px; height: 40px; }
         .color-picker-wrapper input[type="color"] {
             position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; cursor: pointer;
         }
         .color-picker-wrapper .color-preview {
             width: 100%; height: 100%; border-radius: 0.375rem; /* rounded-md */
-            border: 1px solid #e5e7eb; /* border-gray-200 */ cursor: pointer;
+            border: 1px solid #e5e7ebcc; /* border-gray-200 */ cursor: pointer;
             display: flex; align-items: center; justify-content: center;
         }
         .control-section {
-            border: 1px solid #e5e7eb; /* border-gray-200 */
+            border: 1px solid #e5e7eb9d; /* border-gray-200 */
             border-radius: 0.5rem; /* rounded-lg */
             padding: 1rem;
             margin-bottom: 1.25rem; /* mb-5 */
-            background-color: #f9fafb; /* bg-gray-50 */
+            background-color: #f9fafb8c; /* bg-gray-50 */
         }
         .control-section h3 {
             font-size: 0.875rem; /* text-sm */
             font-weight: 600; /* font-semibold */
-            color: #0c62ec; /* text-gray-700 */
+            color: #05038f; /* text-gray-700 */
             margin-bottom: 0.75rem; /* mb-3 */
             padding-bottom: 0.5rem; /* pb-2 */
-            border-bottom: 1px solid #e5e7eb; /* border-gray-200 */
+            border-bottom: 1px solid #e5e7eb98; /* border-gray-200 */
         }
         .grid-cols-auto-fit {
             grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
         }
+        .content-type-form {
+            display: none; /* Hidden by default */
+        }
+        .content-type-form.active {
+            display: block; /* Show active form */
+        }
+        .new img {
+    display: block; /* Make the image a block-level element */
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto; /* These auto margins will center it horizontally */
+}
+.new h1{
+    text-align: center;
+    font-weight: 200;
+    font-size: 20px;
+    font-weight: bold;
+    color: #05038f;
+    font-family: 'Noto Sans Devanagari', sans-serif;
+}
+.new p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    font-family: 'Noto Sans Devanagari', sans-serif;
+}
+body {
+    font-family: 'Poppins', 'Noto Sans Devanagari', sans-serif;
+}
     </style>
 </head>
 <body class="bg-slate-100 flex flex-col items-center justify-center min-h-screen p-4 font-sans transition-all duration-300">
 
     <div class="bg-white p-6 sm:p-8 rounded-xl shadow-2xl w-full max-w-5xl">
         <header class="mb-6 sm:mb-8 text-center">
-            <h1 class="text-3xl sm:text-4xl font-bold text-slate-800">FREE Generate QR asper your BRAND</h1>
-            <p class="text-slate-600 mt-2 text-sm sm:text-base">Customize every aspect of your QR codes.</p>
-            <p class="text-slate-600 mt-2 text-sm sm:text-base">I am not storing your any data.<b>"Basant Balayar"</b></p>
+            
+            <div class="new">
+                <h1>बसन्त बलायर</h1>
+            <p><b>QR Generator</b></p>
+        </div>
         </header>
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
             <div class="lg:col-span-2 space-y-3 overflow-y-auto max-h-[70vh] pr-2">
+
                 <div class="control-section">
+                    <h3>Content Type</h3>
+                    
+                    <select id="qrContentType" class="hidden">
+                        <option value="link">🔗 Link (URL)</option>
+                        <option value="text">📝 Text</option>
+                        <option value="email">📧 E-mail</option>
+                        <option value="call">☏ Call</option>
+                        <option value="sms">💬 SMS</option>
+                        <option value="whatsapp">📱 WhatsApp</option>
+                        <option value="wifi">📶 WI-FI</option>
+                        <option value="vcard">👤 V-card</option>
+                    </select>
+                
+                    <div id="contentTypeCardContainer" class="mt-2 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+                        <button type="button" data-value="link" class="content-type-card p-3 border rounded-lg shadow-sm hover:shadow-md focus:outline-none transition-all duration-150 flex flex-col items-center justify-center text-center">
+                            <span class="text-3xl mb-1.5">🔗</span>
+                            <span class="block text-xs font-medium text-slate-700">Link (URL)</span>
+                        </button>
+                
+                        <button type="button" data-value="text" class="content-type-card p-3 border rounded-lg shadow-sm hover:shadow-md focus:outline-none transition-all duration-150 flex flex-col items-center justify-center text-center">
+                            <span class="text-3xl mb-1.5">📝</span>
+                            <span class="block text-xs font-medium text-slate-700">Text</span>
+                        </button>
+                
+                        <button type="button" data-value="email" class="content-type-card p-3 border rounded-lg shadow-sm hover:shadow-md focus:outline-none transition-all duration-150 flex flex-col items-center justify-center text-center">
+                            <span class="text-3xl mb-1.5">📧</span>
+                            <span class="block text-xs font-medium text-slate-700">E-mail</span>
+                        </button>
+                
+                        <button type="button" data-value="call" class="content-type-card p-3 border rounded-lg shadow-sm hover:shadow-md focus:outline-none transition-all duration-150 flex flex-col items-center justify-center text-center">
+                            <span class="text-3xl mb-1.5">📞</span>
+                            <span class="block text-xs font-medium text-slate-700">Call</span>
+                        </button>
+                
+                        <button type="button" data-value="sms" class="content-type-card p-3 border rounded-lg shadow-sm hover:shadow-md focus:outline-none transition-all duration-150 flex flex-col items-center justify-center text-center">
+                            <span class="text-3xl mb-1.5">💬</span>
+                            <span class="block text-xs font-medium text-slate-700">SMS</span>
+                        </button>
+                
+                        <button type="button" data-value="whatsapp" class="content-type-card p-3 border rounded-lg shadow-sm hover:shadow-md focus:outline-none transition-all duration-150 flex flex-col items-center justify-center text-center">
+                            <span class="text-3xl mb-1.5">📱</span>
+                            <span class="block text-xs font-medium text-slate-700">WhatsApp</span>
+                        </button>
+                
+                        <button type="button" data-value="wifi" class="content-type-card p-3 border rounded-lg shadow-sm hover:shadow-md focus:outline-none transition-all duration-150 flex flex-col items-center justify-center text-center">
+                            <span class="text-3xl mb-1.5">📶</span>
+                            <span class="block text-xs font-medium text-slate-700">WI-FI</span>
+                        </button>
+                
+                        <button type="button" data-value="vcard" class="content-type-card p-3 border rounded-lg shadow-sm hover:shadow-md focus:outline-none transition-all duration-150 flex flex-col items-center justify-center text-center">
+                            <span class="text-3xl mb-1.5">👤</span>
+                            <span class="block text-xs font-medium text-slate-700">V-card</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="contentFormsContainer" class="control-section">
+                    <div id="form-link" class="content-type-form active">
+                        <h3>Link (URL) Options</h3>
+                        <label for="linkData" class="block text-xs font-medium text-slate-700 mb-1">URL</label>
+                        <input type="url" id="linkData" value="https://basantbalayar.com.np" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm transition-shadow duration-200" placeholder="e.g., https://example.com">
+                    </div>
+
+                    <div id="form-text" class="content-type-form">
+                        <h3>Text Options</h3>
+                        <label for="textData" class="block text-xs font-medium text-slate-700 mb-1">Text Content</label>
+                        <textarea id="textData" rows="4" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm transition-shadow duration-200" placeholder="Enter your text here..."></textarea>
+                    </div>
+
+                    <div id="form-email" class="content-type-form">
+                        <h3>E-mail Options</h3>
+                        <label for="emailAddress" class="block text-xs font-medium text-slate-700 mb-1">Email Address</label>
+                        <input type="email" id="emailAddress" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="your@example.com">
+                        <label for="emailSubject" class="block text-xs font-medium text-slate-700 mb-1 mt-3">Subject (Optional)</label>
+                        <input type="text" id="emailSubject" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Subject">
+                        <label for="emailBody" class="block text-xs font-medium text-slate-700 mb-1 mt-3">Body (Optional)</label>
+                        <textarea id="emailBody" rows="3" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Message body"></textarea>
+                    </div>
+
+                    <div id="form-call" class="content-type-form">
+                        <h3>Call Options</h3>
+                        <label for="callNumber" class="block text-xs font-medium text-slate-700 mb-1">Phone Number</label>
+                        <input type="tel" id="callNumber" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="e.g., +1234567890">
+                    </div>
+
+                    <div id="form-sms" class="content-type-form">
+                        <h3>SMS Options</h3>
+                        <label for="smsNumber" class="block text-xs font-medium text-slate-700 mb-1">Phone Number</label>
+                        <input type="tel" id="smsNumber" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="e.g., +1234567890">
+                        <label for="smsMessage" class="block text-xs font-medium text-slate-700 mb-1 mt-3">Message (Optional)</label>
+                        <textarea id="smsMessage" rows="3" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Your message"></textarea>
+                    </div>
+
+                     <div id="form-whatsapp" class="content-type-form">
+                        <h3>WhatsApp Options</h3>
+                        <label for="whatsappNumber" class="block text-xs font-medium text-slate-700 mb-1">WhatsApp Number (with country code)</label>
+                        <input type="tel" id="whatsappNumber" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="e.g., +1234567890">
+                        <label for="whatsappMessage" class="block text-xs font-medium text-slate-700 mb-1 mt-3">Pre-filled Message (Optional)</label>
+                        <textarea id="whatsappMessage" rows="3" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Hello, I would like to chat!"></textarea>
+                    </div>
+
+                    <div id="form-wifi" class="content-type-form">
+                        <h3>Wi-Fi Network Options</h3>
+                        <label for="wifiSsid" class="block text-xs font-medium text-slate-700 mb-1">SSID (Network Name)</label>
+                        <input type="text" id="wifiSsid" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="My Home Network">
+                        <label for="wifiPassword" class="block text-xs font-medium text-slate-700 mb-1 mt-3">Password (Optional)</label>
+                        <input type="password" id="wifiPassword" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Wi-Fi Password">
+                        <label for="wifiEncryption" class="block text-xs font-medium text-slate-700 mb-1 mt-3">Encryption Type</label>
+                        <select id="wifiEncryption" class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-slate-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md">
+                            <option value="WPA">WPA/WPA2/WPA3</option>
+                            <option value="WEP">WEP</option>
+                            <option value="nopass">No Encryption</option>
+                        </select>
+                        <div class="mt-3">
+                            <label for="wifiHidden" class="flex items-center text-xs font-medium text-slate-700">
+                                <input type="checkbox" id="wifiHidden" class="h-4 w-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500 mr-2">
+                                Hidden Network
+                            </label>
+                        </div>
+                    </div>
+
+                    <div id="form-vcard" class="content-type-form">
+                        <h3>V-Card Options</h3>
+                        <label for="vcardFirstName" class="block text-xs font-medium text-slate-700 mb-1">First Name</label>
+                        <input type="text" id="vcardFirstName" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="John">
+
+                        <label for="vcardLastName" class="block text-xs font-medium text-slate-700 mb-1 mt-3">Last Name</label>
+                        <input type="text" id="vcardLastName" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Doe">
+
+                        <label for="vcardOrg" class="block text-xs font-medium text-slate-700 mb-1 mt-3">Organization</label>
+                        <input type="text" id="vcardOrg" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Acme Corp">
+
+                        <label for="vcardTitle" class="block text-xs font-medium text-slate-700 mb-1 mt-3">Title</label>
+                        <input type="text" id="vcardTitle" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Marketing Manager">
+
+                        <label for="vcardPhone" class="block text-xs font-medium text-slate-700 mb-1 mt-3">Phone (Work)</label>
+                        <input type="tel" id="vcardPhone" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="+11234567890">
+
+                        <label for="vcardEmail" class="block text-xs font-medium text-slate-700 mb-1 mt-3">Email</label>
+                        <input type="email" id="vcardEmail" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="john.doe@example.com">
+
+                        <label for="vcardUrl" class="block text-xs font-medium text-slate-700 mb-1 mt-3">Website URL</label>
+                        <input type="url" id="vcardUrl" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="https://www.example.com">
+
+                        <label for="vcardAddress" class="block text-xs font-medium text-slate-700 mb-1 mt-3">Address</label>
+                        <input type="text" id="vcardAddress" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="123 Main St, Anytown">
+                    </div>
+
+                    </div>
+             <div class="control-section">
                     <h3>Basic Options</h3>
                     <div>
-                        <label for="data" class="block text-xs font-medium text-slate-700 mb-1">Data (URL or Text)</label>
-                        <input type="text" id="data" value="https://basantbalayar.com.np" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm transition-shadow duration-200" placeholder="Enter URL or text">
+                        <label for="data" class="block text-xs font-medium text-slate-700 mb-1">Data (Preview - Controlled by Content Type)</label>
+                        <input type="text" id="data" value="https://basantbalayar.com.np" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm transition-shadow duration-200" placeholder="Enter URL or text" readonly>
                     </div>
-                     <div class="mt-3">
+                    <div class="mt-3">
                         <label for="margin" class="block text-xs font-medium text-slate-700 mb-1">QR Code Margin (Quiet Zone)</label>
                         <input type="number" id="margin" value="10" min="0" max="50" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm transition-shadow duration-200">
                     </div>
@@ -135,10 +335,10 @@
                             <select id="bgType" class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-slate-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md">
                                 <option value="solid">Solid Color</option>
                                 <option value="gradient">Gradient</option>
-                                <option value="transparent">Transparent</option> {/* */}
+                                <option value="transparent">Transparent</option>
                             </select>
                         </div>
-                        <div id="solidBgOptions"> 
+                        <div id="solidBgOptions">
                             <label for="bgColor" class="block text-xs font-medium text-slate-700 mb-1">Background Color</label>
                             <div class="color-picker-wrapper">
                                 <div id="bgColorPreview" class="color-preview" style="background-color: #ffffff;"></div>
@@ -146,7 +346,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="gradientBgOptions" class="hidden space-y-3"> 
+                    <div id="gradientBgOptions" class="hidden space-y-3">
                         <div class="grid grid-cols-auto-fit gap-4">
                             <div>
                                 <label for="bgGradientType" class="block text-xs font-medium text-slate-700 mb-1">Gradient Type</label>
@@ -161,7 +361,7 @@
                             </div>
                         </div>
                         <div class="grid grid-cols-2 gap-4">
-                             <div>
+                            <div>
                                 <label for="bgGradientColor1" class="block text-xs font-medium text-slate-700 mb-1">Gradient Color 1</label>
                                 <div class="color-picker-wrapper">
                                     <div id="bgGradientColor1Preview" class="color-preview" style="background-color: #ffffff;"></div>
@@ -183,8 +383,8 @@
                     <h3>Logo / Image Options</h3>
                     <div class="mb-3">
                         <label for="logo" class="block text-xs font-medium text-slate-700 mb-1">Logo Image (PNG only) Recommended size till 0.60</label>
-                        <input type="file" id="logo" accept="image/png" class="mt-1 block w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 transition-colors duration-200 cursor-pointer">
-                        <button id="removeLogo" class="mt-2 text-xs text-red-500 hover:text-red-700 transition-colors duration-200 hidden">&times; Remove Logo</button>
+                        <input type="file"  id="logo" class="mt-1 block w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 transition-colors duration-200 cursor-pointer">
+                        <button id="removeLogo" class="mt-2 text-xs text-blue-500 hover:text-blue-700 transition-colors duration-200 hidden">&times; Remove Logo</button>
                     </div>
                     <div class="grid grid-cols-auto-fit gap-4">
                         <div>
@@ -222,7 +422,8 @@
             By : <a href="https://basantbalayar.com.np" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline">Basant Balayar</a>.
         </p>
     </footer>
-<script>
+    <script>
+        // ... (Your existing JavaScript variables and setupColorPicker function) ...
         const dataInput = document.getElementById('data');
         const marginInput = document.getElementById('margin');
         const logoInput = document.getElementById('logo');
@@ -260,20 +461,19 @@
         const qrLoadingText = document.getElementById('qrLoading');
 
         let uploadedLogo = null;
-        // const qrPreviewSize = 300; // Max size for preview container // Using dynamic size now
 
         const qrCodeInstance = new QRCodeStyling({
-            width: qrCodeContainer.clientWidth || 250, // Initial width
-            height: qrCodeContainer.clientHeight || 250, // Initial height
+            width: qrCodeContainer.clientWidth || 250,
+            height: qrCodeContainer.clientHeight || 250,
             type: 'svg',
-            data: dataInput.value,
+            data: 'https://basantbalayar.com.np', // Default initial data
             image: '',
             margin: parseInt(marginInput.value) || 0,
             dotsOptions: {
                 color: fgColorInput.value,
                 type: dotTypeSelect.value
             },
-            backgroundOptions: { // Default to solid white initially
+            backgroundOptions: {
                 color: bgColorInput.value,
             },
             cornersSquareOptions: {
@@ -295,15 +495,239 @@
             }
         });
 
+        function setupColorPicker(inputEl, previewEl) {
+            previewEl.style.backgroundColor = inputEl.value;
+            inputEl.addEventListener('input', () => {
+                previewEl.style.backgroundColor = inputEl.value;
+                updateQrCode();
+            });
+            previewEl.addEventListener('click', () => inputEl.click());
+        }
+
+        setupColorPicker(fgColorInput, fgColorPreview);
+        setupColorPicker(bgColorInput, bgColorPreview);
+        setupColorPicker(cornersSquareColorInput, cornersSquareColorPreview);
+        setupColorPicker(cornersDotColorInput, cornersDotColorPreview);
+        setupColorPicker(bgGradientColor1Input, bgGradientColor1Preview);
+        setupColorPicker(bgGradientColor2Input, bgGradientColor2Preview);
+
+        bgTypeSelect.addEventListener('change', () => {
+            const selectedType = bgTypeSelect.value;
+            solidBgOptionsDiv.classList.add('hidden');
+            gradientBgOptionsDiv.classList.add('hidden');
+
+            if (selectedType === 'solid') {
+                solidBgOptionsDiv.classList.remove('hidden');
+            } else if (selectedType === 'gradient') {
+                gradientBgOptionsDiv.classList.remove('hidden');
+                bgGradientRotationContainer.style.display = bgGradientTypeSelect.value === 'linear' ? 'block' : 'none';
+            }
+            updateQrCode();
+        });
+
+        bgGradientTypeSelect.addEventListener('change', () => {
+            bgGradientRotationContainer.style.display = bgGradientTypeSelect.value === 'linear' ? 'block' : 'none';
+            updateQrCode();
+        });
+
+        // Event listeners for general options
+        const generalInputsToUpdate = [
+            marginInput, dotTypeSelect,
+            cornersSquareTypeSelect, cornersDotTypeSelect,
+            bgGradientRotationInput,
+            logoSizeInput, logoMarginInput, hideBackgroundDotsCheckbox
+        ];
+        generalInputsToUpdate.forEach(input => input.addEventListener(input.type === 'checkbox' ? 'change' : 'input', updateQrCode));
+        [cornersSquareTypeSelect, cornersDotTypeSelect, bgGradientTypeSelect].forEach(sel => sel.addEventListener('change', updateQrCode));
+
+
+        logoInput.addEventListener('change', (event) => {
+            const file = event.target.files[0];
+            if (file && file.type === "image/png") {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    uploadedLogo = e.target.result;
+                    removeLogoBtn.classList.remove('hidden');
+                    updateQrCode();
+                }
+                reader.readAsDataURL(file);
+            } else if (file) {
+                alert("Please upload a PNG file for the logo.");
+                logoInput.value = "";
+                uploadedLogo = null;
+                removeLogoBtn.classList.add('hidden');
+                updateQrCode();
+            }
+        });
+
+        removeLogoBtn.addEventListener('click', () => {
+            uploadedLogo = null;
+            logoInput.value = "";
+            removeLogoBtn.classList.add('hidden');
+            updateQrCode();
+        });
+
+        // --- NEW CONTENT TYPE HANDLING ---
+
+        const qrContentTypeSelect = document.getElementById('qrContentType');
+        const contentForms = document.querySelectorAll('.content-type-form');
+
+        // Input elements for each content type
+        const linkDataInput = document.getElementById('linkData');
+        const textDataInput = document.getElementById('textData');
+
+        const emailAddressInput = document.getElementById('emailAddress');
+        const emailSubjectInput = document.getElementById('emailSubject');
+        const emailBodyInput = document.getElementById('emailBody');
+
+        const callNumberInput = document.getElementById('callNumber');
+
+        const smsNumberInput = document.getElementById('smsNumber');
+        const smsMessageInput = document.getElementById('smsMessage');
+
+        const whatsappNumberInput = document.getElementById('whatsappNumber');
+        const whatsappMessageInput = document.getElementById('whatsappMessage');
+
+        const wifiSsidInput = document.getElementById('wifiSsid');
+        const wifiPasswordInput = document.getElementById('wifiPassword');
+        const wifiEncryptionSelect = document.getElementById('wifiEncryption');
+        const wifiHiddenCheckbox = document.getElementById('wifiHidden');
+
+        const vcardFirstNameInput = document.getElementById('vcardFirstName');
+        const vcardLastNameInput = document.getElementById('vcardLastName');
+        const vcardOrgInput = document.getElementById('vcardOrg');
+        const vcardTitleInput = document.getElementById('vcardTitle');
+        const vcardPhoneInput = document.getElementById('vcardPhone');
+        const vcardEmailInput = document.getElementById('vcardEmail');
+        const vcardUrlInput = document.getElementById('vcardUrl');
+        const vcardAddressInput = document.getElementById('vcardAddress');
+
+
+        function showSelectedForm() {
+            const selectedType = qrContentTypeSelect.value;
+            contentForms.forEach(form => {
+                if (form.id === `form-${selectedType}`) {
+                    form.classList.add('active');
+                } else {
+                    form.classList.remove('active');
+                }
+            });
+            // Update QR code whenever the form type changes
+            updateQrCode();
+        }
+
+        function getQrData() {
+            const selectedType = qrContentTypeSelect.value;
+            let data = '';
+
+            switch (selectedType) {
+                case 'link':
+                    data = linkDataInput.value;
+                    break;
+                case 'text':
+                    data = textDataInput.value;
+                    break;
+                case 'email':
+                    let email = emailAddressInput.value;
+                    let subject = emailSubjectInput.value;
+                    let body = emailBodyInput.value;
+                    data = `mailto:${email}`;
+                    const params = [];
+                    if (subject) params.push(`subject=${encodeURIComponent(subject)}`);
+                    if (body) params.push(`body=${encodeURIComponent(body)}`);
+                    if (params.length > 0) {
+                        data += `?${params.join('&')}`;
+                    }
+                    break;
+                case 'call':
+                    data = `tel:${callNumberInput.value}`;
+                    break;
+                case 'sms':
+                    let smsNum = smsNumberInput.value;
+                    let smsMsg = smsMessageInput.value;
+                    data = `smsto:${smsNum}`;
+                    if (smsMsg) {
+                        data += `:${encodeURIComponent(smsMsg)}`;
+                    }
+                    break;
+                 case 'whatsapp':
+                    let wpNum = whatsappNumberInput.value.replace(/[^0-9]/g, ''); // Remove non-digits
+                    let wpMsg = whatsappMessageInput.value;
+                    if (wpNum) {
+                        data = `https://wa.me/${wpNum}`;
+                        if (wpMsg) {
+                            data += `?text=${encodeURIComponent(wpMsg)}`;
+                        }
+                    } else {
+                        data = ''; // Or handle error
+                    }
+                    break;
+                case 'wifi':
+                    let wifiSsid = wifiSsidInput.value;
+                    let wifiPass = wifiPasswordInput.value;
+                    let wifiEnc = wifiEncryptionSelect.value;
+                    let wifiHidden = wifiHiddenCheckbox.checked ? 'true' : 'false';
+
+                    // Format: WIFI:S:<SSID>;T:<encryption type>;P:<password>;H:<true|false>;
+                    // Encryption types: WEP, WPA, or "nopass"
+                    if (wifiSsid) {
+                        data = `WIFI:S:${escapeForWifi(wifiSsid)};`;
+                        if (wifiEnc !== 'nopass') {
+                            data += `T:${wifiEnc};`;
+                        }
+                        if (wifiPass && wifiEnc !== 'nopass') {
+                            data += `P:${escapeForWifi(wifiPass)};`;
+                        }
+                        data += `H:${wifiHidden};`;
+                    } else {
+                        data = ''; // Or handle error
+                    }
+                    break;
+                case 'vcard':
+                    let vfirstName = vcardFirstNameInput.value;
+                    let vlastName = vcardLastNameInput.value;
+                    let vorg = vcardOrgInput.value;
+                    let vtitle = vcardTitleInput.value;
+                    let vphone = vcardPhoneInput.value;
+                    let vemail = vcardEmailInput.value;
+                    let vurl = vcardUrlInput.value;
+                    let vaddress = vcardAddressInput.value;
+
+                    let vcard = 'BEGIN:VCARD\nVERSION:3.0\n';
+                    if (vfirstName || vlastName) {
+                        vcard += `N:${vlastName};${vfirstName};;;\n`;
+                        vcard += `FN:${vfirstName} ${vlastName}\n`;
+                    }
+                    if (vorg) vcard += `ORG:${vorg}\n`;
+                    if (vtitle) vcard += `TITLE:${vtitle}\n`;
+                    if (vphone) vcard += `TEL:${vphone}\n`;
+                    if (vemail) vcard += `EMAIL:${vemail}\n`;
+                    if (vurl) vcard += `URL:${vurl}\n`;
+                    if (vaddress) vcard += `ADR:;;${vaddress};;;;\n`;
+                    vcard += 'END:VCARD';
+                    data = vcard;
+                    break;
+                // Add more cases for other types
+                default:
+                    data = ''; // Fallback
+            }
+            dataInput.value = data; // Update the readonly data input for preview
+            return data;
+        }
+
+        // Helper function for Wi-Fi (escaping semicolons and backslashes)
+        function escapeForWifi(str) {
+            return str.replace(/\\/g, '\\\\').replace(/;/g, '\\;');
+        }
+
+        // Modified updateQrCode to use getQrData()
         function updateQrCode() {
             if (!qrCodeInstance) return;
             qrLoadingText.classList.remove('hidden');
             qrCodeContainer.classList.add('opacity-50');
 
-            let backgroundOpts = {}; // Initialize as empty object
-
+            let backgroundOpts = {};
             const selectedBgType = bgTypeSelect.value;
-
             if (selectedBgType === 'solid') {
                 backgroundOpts.color = bgColorInput.value;
             } else if (selectedBgType === 'gradient') {
@@ -315,18 +739,17 @@
                         { offset: 1, color: bgGradientColor2Input.value }
                     ]
                 };
-                // When using a gradient, qr-code-styling often expects the base color to be transparent
-                // or it might overlay. To be explicit for gradients, we can set a transparent base.
                 backgroundOpts.color = 'transparent';
             } else if (selectedBgType === 'transparent') {
-                backgroundOpts.color = 'transparent'; // MODIFIED HERE
+                backgroundOpts.color = 'transparent';
             }
 
+            const currentData = getQrData(); // Get data based on selected type
 
             const options = {
                 width: qrCodeContainer.clientWidth || 250,
                 height: qrCodeContainer.clientHeight || 250,
-                data: dataInput.value || "Advanced QR Generator",
+                data: currentData || "No data entered", // Use generated data
                 margin: parseInt(marginInput.value) || 0,
                 dotsOptions: {
                     color: fgColorInput.value,
@@ -358,77 +781,41 @@
             }, 200);
         }
 
-        function setupColorPicker(inputEl, previewEl) {
-            previewEl.style.backgroundColor = inputEl.value;
-            inputEl.addEventListener('input', () => {
-                previewEl.style.backgroundColor = inputEl.value;
-                updateQrCode();
-            });
-            previewEl.addEventListener('click', () => inputEl.click());
-        }
+        // Event listener for content type selection
+        qrContentTypeSelect.addEventListener('change', showSelectedForm);
 
-        setupColorPicker(fgColorInput, fgColorPreview);
-        setupColorPicker(bgColorInput, bgColorPreview);
-        setupColorPicker(cornersSquareColorInput, cornersSquareColorPreview);
-        setupColorPicker(cornersDotColorInput, cornersDotColorPreview);
-        setupColorPicker(bgGradientColor1Input, bgGradientColor1Preview);
-        setupColorPicker(bgGradientColor2Input, bgGradientColor2Preview);
+        // Add event listeners for new content type inputs
+        // These will trigger updateQrCode whenever a field in the active form changes
+        linkDataInput.addEventListener('input', updateQrCode);
+        textDataInput.addEventListener('input', updateQrCode);
 
-        bgTypeSelect.addEventListener('change', () => {
-            const selectedType = bgTypeSelect.value;
-            solidBgOptionsDiv.classList.add('hidden');
-            gradientBgOptionsDiv.classList.add('hidden');
+        emailAddressInput.addEventListener('input', updateQrCode);
+        emailSubjectInput.addEventListener('input', updateQrCode);
+        emailBodyInput.addEventListener('input', updateQrCode);
 
-            if (selectedType === 'solid') {
-                solidBgOptionsDiv.classList.remove('hidden');
-            } else if (selectedType === 'gradient') {
-                gradientBgOptionsDiv.classList.remove('hidden');
-                bgGradientRotationContainer.style.display = bgGradientTypeSelect.value === 'linear' ? 'block' : 'none';
-            }
-            // For 'transparent', both solid and gradient controls remain hidden.
-            updateQrCode();
-        });
+        callNumberInput.addEventListener('input', updateQrCode);
 
-        bgGradientTypeSelect.addEventListener('change', () => {
-             bgGradientRotationContainer.style.display = bgGradientTypeSelect.value === 'linear' ? 'block' : 'none';
-            updateQrCode();
-        });
+        smsNumberInput.addEventListener('input', updateQrCode);
+        smsMessageInput.addEventListener('input', updateQrCode);
 
-        const inputsToUpdate = [
-            dataInput, marginInput, dotTypeSelect,
-            cornersSquareTypeSelect, cornersDotTypeSelect,
-            bgGradientRotationInput,
-            logoSizeInput, logoMarginInput, hideBackgroundDotsCheckbox
-        ];
-        inputsToUpdate.forEach(input => input.addEventListener(input.type === 'checkbox' ? 'change' : 'input', updateQrCode));
-        [cornersSquareTypeSelect, cornersDotTypeSelect, bgGradientTypeSelect].forEach(sel => sel.addEventListener('change', updateQrCode));
+        whatsappNumberInput.addEventListener('input', updateQrCode);
+        whatsappMessageInput.addEventListener('input', updateQrCode);
 
+        wifiSsidInput.addEventListener('input', updateQrCode);
+        wifiPasswordInput.addEventListener('input', updateQrCode);
+        wifiEncryptionSelect.addEventListener('change', updateQrCode);
+        wifiHiddenCheckbox.addEventListener('change', updateQrCode);
 
-        logoInput.addEventListener('change', (event) => {
-            const file = event.target.files[0];
-            if (file && file.type === "image/png") {
-                const reader = new FileReader();
-                reader.onload = function(e) {
-                    uploadedLogo = e.target.result;
-                    removeLogoBtn.classList.remove('hidden');
-                    updateQrCode();
-                }
-                reader.readAsDataURL(file);
-            } else if (file) {
-                alert("Please upload a PNG file for the logo.");
-                logoInput.value = "";
-                uploadedLogo = null;
-                removeLogoBtn.classList.add('hidden');
-                updateQrCode();
-            }
-        });
+        vcardFirstNameInput.addEventListener('input', updateQrCode);
+        vcardLastNameInput.addEventListener('input', updateQrCode);
+        vcardOrgInput.addEventListener('input', updateQrCode);
+        vcardTitleInput.addEventListener('input', updateQrCode);
+        vcardPhoneInput.addEventListener('input', updateQrCode);
+        vcardEmailInput.addEventListener('input', updateQrCode);
+        vcardUrlInput.addEventListener('input', updateQrCode);
+        vcardAddressInput.addEventListener('input', updateQrCode);
 
-        removeLogoBtn.addEventListener('click', () => {
-            uploadedLogo = null;
-            logoInput.value = "";
-            removeLogoBtn.classList.add('hidden');
-            updateQrCode();
-        });
+        // ... (Rest of your existing JavaScript, including downloadBtn listener) ...
 
         downloadBtn.addEventListener('click', () => {
             if (qrCodeInstance) {
@@ -440,7 +827,6 @@
                 const downloadSize = 1024;
                 const currentOptions = { ...qrCodeInstance._options }; // Clone current options
 
-                // Ensure background is correctly set for download based on current selection
                 let downloadBgOpts = {};
                 const selectedBgType = bgTypeSelect.value;
                 if (selectedBgType === 'solid') {
@@ -451,18 +837,18 @@
                         rotation: bgGradientTypeSelect.value === 'linear' ? parseFloat(bgGradientRotationInput.value) : 0,
                         colorStops: [ { offset: 0, color: bgGradientColor1Input.value }, { offset: 1, color: bgGradientColor2Input.value }]
                     };
-                    downloadBgOpts.color = 'transparent'; // Important for gradient PNG
+                    downloadBgOpts.color = 'transparent';
                 } else if (selectedBgType === 'transparent') {
                     downloadBgOpts.color = 'transparent';
                 }
 
-
                 const dlInstance = new QRCodeStyling({
-                    ...currentOptions, // Spread existing options
+                    ...currentOptions,
                     width: downloadSize,
                     height: downloadSize,
-                    backgroundOptions: downloadBgOpts, // Apply specific background for download
-                    type: 'png' // Request PNG directly
+                    backgroundOptions: downloadBgOpts,
+                    data: getQrData() || "No data entered", // Crucial: get the current data for download!
+                    type: 'png'
                 });
 
                 dlInstance.getRawData('png').then((blob) => {
@@ -470,8 +856,8 @@
                         const url = URL.createObjectURL(blob);
                         const anchor = document.createElement('a');
                         anchor.href = url;
-                        const dataText = dataInput.value.replace(/[^a-zA-Z0-9]/g, '_').substring(0, 30) || "qrcode";
-                        anchor.download = `${dataText}_qr_code.png`;
+                        const dataText = getQrData().replace(/[^a-zA-Z0-9]/g, '_').substring(0, 30) || "qrcode"; // Use generated data for filename
+                        anchor.download = `BB_QR.png`;
                         document.body.appendChild(anchor);
                         anchor.click();
                         document.body.removeChild(anchor);
@@ -493,15 +879,77 @@
 
         qrCodeInstance.append(qrCodeContainer);
         bgTypeSelect.dispatchEvent(new Event('change')); // Sets initial UI for background options
-        updateQrCode();
+        showSelectedForm(); // Initialize by showing the link form and updating QR
+        // updateQrCode is called by showSelectedForm, so no need to call it directly here.
 
         window.addEventListener('resize', () => {
             const containerWidth = qrCodeContainer.clientWidth;
-             if (qrCodeInstance._options.width !== containerWidth && containerWidth > 50) {
-                updateQrCode(); // Call updateQrCode to re-evaluate width and height
+            if (qrCodeInstance._options.width !== containerWidth && containerWidth > 50) {
+                updateQrCode();
             }
         });
-</script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const cardContainer = document.getElementById('contentTypeCardContainer');
+    const hiddenSelect = document.getElementById('qrContentType');
+    const cards = cardContainer.querySelectorAll('.content-type-card');
+
+    const normalCardClasses = ['bg-white', 'border-slate-300'];
+    const activeCardClasses = ['bg-blue-500', 'border-blue-600', 'ring-2', 'ring-blue-400', 'ring-offset-1'];
     
+    const normalTextColorClass = 'text-slate-700';
+    const activeTextColorClass = 'text-white';
+
+    function setActiveCard(selectedCard) {
+        cards.forEach(card => {
+            // Reset styles for all cards
+            card.classList.remove(...activeCardClasses);
+            card.classList.add(...normalCardClasses);
+            card.querySelector('span.block').classList.remove(activeTextColorClass);
+            card.querySelector('span.block').classList.add(normalTextColorClass);
+            // Also reset icon color if needed, but emojis usually take parent text color or have their own
+            card.querySelector('span.text-3xl').classList.remove(activeTextColorClass); // emojis might not change color this way
+             card.querySelector('span.text-3xl').classList.add(normalTextColorClass);
+
+
+        });
+
+        // Apply active styles to the selected card
+        selectedCard.classList.add(...activeCardClasses);
+        selectedCard.classList.remove(...normalCardClasses);
+        selectedCard.querySelector('span.block').classList.add(activeTextColorClass);
+        selectedCard.querySelector('span.block').classList.remove(normalTextColorClass);
+        selectedCard.querySelector('span.text-3xl').classList.add(activeTextColorClass); // emojis might not change color this way
+        selectedCard.querySelector('span.text-3xl').classList.remove(normalTextColorClass);
+
+
+        // Update the hidden select's value
+        const selectedValue = selectedCard.dataset.value;
+        if (hiddenSelect.value !== selectedValue) {
+            hiddenSelect.value = selectedValue;
+            // Dispatch a change event to trigger other listeners (e.g., form display logic)
+            const event = new Event('change', { bubbles: true });
+            hiddenSelect.dispatchEvent(event);
+        }
+    }
+
+    cards.forEach(card => {
+        card.addEventListener('click', () => {
+            setActiveCard(card);
+        });
+    });
+
+    // Set initial active card based on the hidden select's default value (or set a hardcoded default)
+    // This ensures consistency if your page has a default selected content type
+    let initialValue = hiddenSelect.value;
+    if (!initialValue && cards.length > 0) { // If select has no value, default to the first card
+        initialValue = cards[0].dataset.value;
+    }
+    const initiallySelectedCard = cardContainer.querySelector(`.content-type-card[data-value="${initialValue}"]`);
+    if (initiallySelectedCard) {
+        setActiveCard(initiallySelectedCard);
+    }
+});
+    </script>
+
 </body>
 </html>
